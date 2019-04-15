@@ -12,9 +12,11 @@
 		88302AF52263825000C44382 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88302AF32263825000C44382 /* Main.storyboard */; };
 		88302AF72263826D00C44382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88302AF62263826D00C44382 /* Assets.xcassets */; };
 		88302AFA2263826D00C44382 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88302AF82263826D00C44382 /* LaunchScreen.storyboard */; };
+		DE54C1FECFE2ACB5DF0CB796 /* Pods_LinuxNews_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CA817EE1055C07EDDBB87B /* Pods_LinuxNews_2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09CA817EE1055C07EDDBB87B /* Pods_LinuxNews_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinuxNews_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88302AEC2263824D00C44382 /* LinuxNews_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinuxNews_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88302AEF2263824E00C44382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88302AF12263824F00C44382 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		88302AF62263826D00C44382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88302AF92263826D00C44382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88302AFB2263826D00C44382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6678F9E151A58DE885E0572 /* Pods-LinuxNews_2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinuxNews_2.release.xcconfig"; path = "Target Support Files/Pods-LinuxNews_2/Pods-LinuxNews_2.release.xcconfig"; sourceTree = "<group>"; };
+		DEC5B0AC476024A085E71AA1 /* Pods-LinuxNews_2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinuxNews_2.debug.xcconfig"; path = "Target Support Files/Pods-LinuxNews_2/Pods-LinuxNews_2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE54C1FECFE2ACB5DF0CB796 /* Pods_LinuxNews_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18D8C77348272E43FF80E70F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEC5B0AC476024A085E71AA1 /* Pods-LinuxNews_2.debug.xcconfig */,
+				C6678F9E151A58DE885E0572 /* Pods-LinuxNews_2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		88302AE32263824D00C44382 = {
 			isa = PBXGroup;
 			children = (
 				88302AEE2263824E00C44382 /* LinuxNews_2 */,
 				88302AED2263824D00C44382 /* Products */,
+				18D8C77348272E43FF80E70F /* Pods */,
+				EE06FF6962C216097F5F1709 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = LinuxNews_2;
 			sourceTree = "<group>";
 		};
+		EE06FF6962C216097F5F1709 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09CA817EE1055C07EDDBB87B /* Pods_LinuxNews_2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88302AFE2263826D00C44382 /* Build configuration list for PBXNativeTarget "LinuxNews_2" */;
 			buildPhases = (
+				73C495D663A09A7F14C19C50 /* [CP] Check Pods Manifest.lock */,
 				88302AE82263824D00C44382 /* Sources */,
 				88302AE92263824D00C44382 /* Frameworks */,
 				88302AEA2263824D00C44382 /* Resources */,
+				568AF84CCA14DBC90C9D5862 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		568AF84CCA14DBC90C9D5862 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinuxNews_2/Pods-LinuxNews_2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyXMLParser/SwiftyXMLParser.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyXMLParser.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LinuxNews_2/Pods-LinuxNews_2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73C495D663A09A7F14C19C50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinuxNews_2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88302AE82263824D00C44382 /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		88302AFF2263826D00C44382 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEC5B0AC476024A085E71AA1 /* Pods-LinuxNews_2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +373,7 @@
 		};
 		88302B002263826D00C44382 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6678F9E151A58DE885E0572 /* Pods-LinuxNews_2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
